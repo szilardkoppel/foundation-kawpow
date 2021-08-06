@@ -17,16 +17,7 @@ If you need help with a code-related matter, the first place to look is our [Dis
 
 ---
 
-### Install
-
-__Install as Dependency in NodeJS Project__
-
-```bash
-sudo apt-get install build-essential
-npm install foundation-kawpow --save
-```
-
-__Install & Test__
+### Install & Test
 
 ```bash
 curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
@@ -40,8 +31,6 @@ npm install && npm test
 ---
 
 ### Usage
-
-__Hash__
 
 ```javascript
 const kawpow = require('foundation-kawpow');
@@ -67,8 +56,6 @@ kawpow.hashOne(headerHashBuf, nonceBuf, blockHeight, mixOutBuf, hashOutBuf);
 console.log(mixHashBuf.toString('hex'));
 console.log(hashOutBuf.toString('hex'));
 ```
-
-__Verify__
 
 ```javascript
 const kawpow = require('foundation-kawpow');
