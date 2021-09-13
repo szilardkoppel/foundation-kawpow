@@ -9,46 +9,16 @@ on:
       - master
 
 jobs:
-  linux-node10:
+  build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [10.x, 11.x, 12.x, 13.x, 14.x, 15.x]
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - name: Test Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
         with:
-          node-version: '10.x'
-          registry-url: 'https://npm.pkg.github.com'
-      - run: npm install
-      - run: npm test
-
-  linux-node12:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-        with:
-          node-version: '12.x'
-          registry-url: 'https://npm.pkg.github.com'
-      - run: npm install
-      - run: npm test
-
-  windows-node10:
-    runs-on: windows-2016
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-        with:
-          node-version: '10.x'
-          registry-url: 'https://npm.pkg.github.com'
-      - run: npm install
-      - run: npm test
-
-  windows-node12:
-    runs-on: windows-2016
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-        with:
-          node-version: '12.x'
-          registry-url: 'https://npm.pkg.github.com'
+          node-version: ${{ matrix.node-version }}
       - run: npm install
       - run: npm test
