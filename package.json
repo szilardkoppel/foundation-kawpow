@@ -1,6 +1,6 @@
 {
     "name": "foundation-kawpow",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "main": "./index.js",
     "description": "KawPOW algorithm hashing and verification functions for NodeJS.",
     "keywords": [
