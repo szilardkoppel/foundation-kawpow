@@ -5,7 +5,7 @@
 [![Downloads](https://img.shields.io/npm/dm/foundation-kawpow.svg)](https://www.npmjs.com/package/foundation-kawpow)
 [![Version](https://img.shields.io/npm/v/foundation-kawpow.svg)](https://www.npmjs.com/package/foundation-kawpow)
 [![Known Vulnerabilities](https://snyk.io/test/npm/foundation-kawpow/badge.svg)](https://snyk.io/test/npm/foundation-kawpow)
-[![Discord](https://img.shields.io/discord/738590795384356904)](https://discord.gg/8xtHZFKJQY)
+[![Discord](https://img.shields.io/discord/738590795384356904)](https://discord.gg/rNjez6VgNF)
 
 This is a Node module for simple hashing and verifying inputs using the
 KawPOW proof-of-work algorithm as implemented by [Ravencoin](https://github.com/RavenProject/Ravencoin/releases/tag/v4.0.0). Most of the native code comes from or is adapted from [Ravencoin code](https://github.com/RavenProject/Ravencoin). This module has been developed and tested on [Node v10.16.3](https://nodejs.org/) and
@@ -13,7 +13,7 @@ KawPOW proof-of-work algorithm as implemented by [Ravencoin](https://github.com/
 
 #### Need Support?
 
-If you need help with a code-related matter, the first place to look is our [Discord](https://discord.gg/8xtHZFKJQY), where the developers will be available to answer any questions. However, please do not come to me with issues regarding setup. Use Google and the existing documentation for that.
+If you need help with a code-related matter, the first place to look is our [Discord](https://discord.gg/rNjez6VgNF), where the developers will be available to answer any questions. However, please do not come to me with issues regarding setup. Use Google and the existing documentation for that.
 
 ---
 
